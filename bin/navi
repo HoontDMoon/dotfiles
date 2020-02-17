@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/home/hoontermood/repos/navi/navi "$@"

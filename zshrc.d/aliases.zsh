@@ -1,7 +1,6 @@
 alias ..="cd .."
 alias zshrc="nvim ~/.zshrc"
 alias zenv="nvim ~/.zshenv"
-alias src="source ~/.zshrc"
 alias exenv="exec $SHELL"
 alias swesc='setxkbmap -option "caps:swapescape"'
 alias eal="nvim ~/zshrc.d/aliases.zsh"
@@ -10,3 +9,4 @@ alias nvimrc="nvim ~/.config/nvim/config ."
 alias nviml="nvim -u ~/projects/nvim-test/init.vim"
 alias nvq="nvim-qt"
 alias gcl="git clone"
+alias yad="yadm add -f"

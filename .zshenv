@@ -1,4 +1,5 @@
 export PYENV_ROOT="$HOME/.pyenv"
+export ZPLUG_LOADFILE="$HOME/zshrc.d/packages.zsh"
 export path=(
     $path
     $PYENV_ROOT/bin

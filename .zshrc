@@ -8,11 +8,11 @@ zplug "Aloxaf/fzf-tab"
 
 zplug load
 
-compinit
-
 bindkey -e
 
 eval $(thefuck --alias)
+
+source "$(navi widget zsh)"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -34,3 +34,4 @@ if [ -d $HOME/rc.d ]; then
 fi
 fpath=($fpath ~/zshrc.d/functions)
 autoload -Uz ~/zshrc.d/functions/**/*
+eval "$(starship init zsh)"

@@ -8,14 +8,15 @@ zplug "Aloxaf/fzf-tab"
 
 zplug load
 
+unsetopt Beep
+
+export PATH=$PATH:/usr/local/go/bin
+
 bindkey -e
 
 source "$(navi widget zsh)"
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-autoload bashcompinit
-bashcompinit
 
 # load all files from zshrc.d directory
 if [ -d $HOME/zshrc.d/ ]; then
@@ -30,7 +31,9 @@ if [ -d $HOME/rc.d ]; then
         source $file
     done
 fi
-fpath=($fpath ~/zshrc.d/functions ~/zshrc.d/completions)
-autoload -U compinit && compinit
+fpath=($fpath ~/zshrc.d/functions)
+# autoload -U compinit && compinit
 autoload -Uz ~/zshrc.d/functions/**/*
 eval "$(starship init zsh)"
+
+[[ -s "/home/hoontermood/.gvm/scripts/gvm" ]] && source "/home/hoontermood/.gvm/scripts/gvm"

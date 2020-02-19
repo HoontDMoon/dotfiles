@@ -1,0 +1,12 @@
+[user]
+	email = hoontermood@protonmail.com
+	name = HoontDMoon
+[core]
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[url "https://github.com/"]
+    insteadOf = gh:
+[url "https://aur.archlinux.org/"]
+    insteadOf = aur:
+[hub]
+	protocol = https

@@ -1,0 +1,12 @@
+git-extras-git 5.1.0.r5.gb708a8a-1
+gnvim-git r273.65846f4-1
+pamac-cli-src 9.3.0-1
+pamac-common 9.3.0-1
+pamac-gtk 9.3.0-1
+rxvt-unicode-pixbuf 9.22-2
+spaceship-prompt-git v3.11.2.r12.g6319158-1
+spotify 1:1.1.10.546-3
+spotify-tui 0.14.0-1
+ttf-typicons 2.0.9-1
+yadm-git 2.4.0.r0.gdd86c8a-1
+yay 9.4.4-1

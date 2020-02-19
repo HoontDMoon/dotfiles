@@ -10,8 +10,6 @@ zplug load
 
 bindkey -e
 
-eval $(thefuck --alias)
-
 source "$(navi widget zsh)"
 
 # fzf
@@ -32,6 +30,7 @@ if [ -d $HOME/rc.d ]; then
         source $file
     done
 fi
-fpath=($fpath ~/zshrc.d/functions)
+fpath=($fpath ~/zshrc.d/functions ~/zshrc.d/completions)
+autoload -U compinit && compinit
 autoload -Uz ~/zshrc.d/functions/**/*
 eval "$(starship init zsh)"
